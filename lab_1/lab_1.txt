@@ -1,0 +1,4 @@
+1) wc -w < dictionary.txt
+2) tr -s '[:space:]' '\n' < dictionary.txt | grep -icE '^([^c]*[c]){2}[^c]*$' 
+3) tr -s '[:space:]' '\n' < dictionary.txt | grep -icE '^[^t]*[t][^t]{2}[t][^t]*$'
+4) tr -s '[:space:]' '\n' < dictionary.txt | grep -iE '^([^o]|o[^o])*o?$' | cut -c1-3 | sort | uniq -c | sort -nr | head -n 4 | awk '{print $2}'
