@@ -38,14 +38,12 @@ git init
    git switch master
    ```
 
-````
-
 <!--При использовании 1 коментированного блока, а не пункта 1 вместо master пропишем main-->
 
 5. ```
    git diff HEAD~1 HEAD
    git log
-````
+    ```
 
 # Задание 2
 
