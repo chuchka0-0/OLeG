@@ -1,5 +1,13 @@
 # Задание 1
 
+<!--
+1 пункт:
+git config --global user.name "chuchka"
+git config --global user.email "moyapochta@chuchka.com"
+git config --global init.defaultBranch "main"
+git init
+-->
+
 1. ```
    mkdir bebebe && cd bebebe && ls
    git init
@@ -20,7 +28,18 @@
     git log
    ```
 
-4.
+4. ```
+   git checkout HEAD~1
+
+   ИЛИ 
+
+   git switch --detach HEAD~1
+   cat text.txt
+   git switch master
+   ```
+<!--При использовании 1 коментированного блока, а не пункта 1 вместо master пропишем main-->
+
+
 5.
 
 # Задание 2
