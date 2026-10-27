@@ -7,13 +7,19 @@
    ```
 
 2. ```
-   echo "hochu spat" > text.txt
-   git add
-   git commit -m "add massage in text.txt"
+   touch text.txt
+   git add text.txt
+   git commit -m "init: text.txt"
    git log
    ```
 
-3.
+3. ```
+    echo "Hochu spat" >> text.txt
+    git add text.txt
+    git commit -m "feat: add message in text.txt"
+    git log
+   ```
+
 4.
 5.
 
