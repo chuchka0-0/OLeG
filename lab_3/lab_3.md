@@ -1,12 +1,18 @@
 # Задание 1
 
 1. ```
-   ls
+   mkdir bebebe && cd bebebe && ls
    git init
    git status
    ```
 
-2.
+2. ```
+   echo "hochu spat" > text.txt
+   git add
+   git commit -m "add massage in text.txt"
+   git log
+   ```
+
 3.
 4.
 5.
