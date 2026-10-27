@@ -31,7 +31,7 @@ git init
 4. ```
    git checkout HEAD~1
 
-   ИЛИ 
+   ИЛИ
 
    git switch --detach HEAD~1
    cat text.txt
@@ -39,8 +39,10 @@ git init
    ```
 <!--При использовании 1 коментированного блока, а не пункта 1 вместо master пропишем main-->
 
-
-5.
+5. ```
+    git diff HEAD~1 HEAD
+    git log
+    ```
 
 # Задание 2
 
