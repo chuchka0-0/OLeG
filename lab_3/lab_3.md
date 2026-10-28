@@ -8,27 +8,27 @@ git config --global init.defaultBranch "main"
 git init
 -->
 
-1. ```
+1. ```bash
    mkdir bebebe && cd bebebe && ls
    git init
    git status
    ```
 
-2. ```
+2. ```bash
    touch text.txt
    git add text.txt
    git commit -m "init: text.txt"
    git log
    ```
 
-3. ```
+3. ```bash
     echo "Hochu spat" >> text.txt
     git add text.txt
     git commit -m "feat: add message in text.txt"
     git log
    ```
 
-4. ```
+4. ```bash
    git checkout HEAD~1
 
    ИЛИ
@@ -40,21 +40,21 @@ git init
 
    <!--При использовании 1 коментированного блока, а не пункта 1 вместо master пропишем main-->
 
-5. ```
+5. ```bash
    git diff HEAD~1 HEAD
    git log
    ```
 
 # Задание 2
 
-1. ```
+1. ```bash
    git branch vetka
    ```
-2. ```
+2. ```bash
    git switch vetka
    ```
 
-3. ```
+3. ```bash
    echo "i kushat" >> text.txt
 
    git add text.txt
@@ -68,7 +68,7 @@ git init
 
    <!--При использовании 1 коментированного блока, а не пункта 1 вместо master пропишем main-->
 
-4. ```
+4. ```bash
    git merge vetka
    git diff master vetka
    vim text.txt
@@ -78,4 +78,67 @@ git init
 
    <!--При использовании 1 коментированного блока, а не пункта 1 вместо master пропишем main-->
 
-5.
+5. Прошла уровни на сайте. Решения заданий: 
+
+### Введение №1
+
+```bash
+git commit
+git commit
+```
+
+### Введение №2
+
+```bash
+git checkout -b bugFix
+```
+
+### Введение №3
+
+```bash
+git checkout -b bugFix
+git commit
+git checkout main
+git commit
+git marge bugFix
+```
+
+### Введение №4
+
+```bash
+git checkout -b bugFix
+git commit
+git checkout main
+git commit
+git checkout bugFix
+git rebase main
+```
+
+### Едем дальше №1
+
+```bash
+git checkout C4
+```
+
+### Едем дальше №2
+
+```bash
+git checkout bugFix^
+```
+
+### Едем дальше №3
+
+```bash
+git branch -f main C6
+git checkout C1
+git branch -f bugFix HEAD~1
+```
+
+### Едем дальше №4
+
+```bash
+git reset HEAD~1
+git checkout pushed
+git revert C2
+```
+
