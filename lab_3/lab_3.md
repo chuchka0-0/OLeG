@@ -43,7 +43,7 @@ git init
 5. ```
    git diff HEAD~1 HEAD
    git log
-    ```
+   ```
 
 # Задание 2
 
@@ -51,8 +51,21 @@ git init
    git branch vetka
    ```
 2. ```
-   git switch vetka
-   ```  
-3.
-4.
-5.
+      git switch vetka
+   ```
+
+3. ```
+   echo "i kushat" >> text.txt
+
+   git add text.txt
+   git commit -m "feat: add message in text.txt"
+
+   git switch master
+   echo "ochen"
+   git add text.txt
+   git commit -m "feat: add message in file"
+   ```
+   <!--При использовании 1 коментированного блока, а не пункта 1 вместо master пропишем main-->
+
+4. 
+5. 
