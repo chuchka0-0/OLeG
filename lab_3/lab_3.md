@@ -38,7 +38,7 @@ git init
    git switch master
    ```
 
-<!--При использовании 1 коментированного блока, а не пункта 1 вместо master пропишем main-->
+   <!--При использовании 1 коментированного блока, а не пункта 1 вместо master пропишем main-->
 
 5. ```
    git diff HEAD~1 HEAD
@@ -51,7 +51,7 @@ git init
    git branch vetka
    ```
 2. ```
-      git switch vetka
+   git switch vetka
    ```
 
 3. ```
@@ -65,7 +65,17 @@ git init
    git add text.txt
    git commit -m "feat: add message in file"
    ```
+
    <!--При использовании 1 коментированного блока, а не пункта 1 вместо master пропишем main-->
 
-4. 
-5. 
+4. ```
+   git merge vetka
+   git diff master vetka
+   vim text.txt
+   git add text.txt
+   git commit -m "fix: fix conflicts"
+   ```
+
+   <!--При использовании 1 коментированного блока, а не пункта 1 вместо master пропишем main-->
+
+5.
