@@ -61,7 +61,7 @@ git init
    git commit -m "feat: add message in text.txt"
 
    git switch master
-   echo "ochen"
+   echo "ochen" >> text.txt
    git add text.txt
    git commit -m "feat: add message in file"
    ```
