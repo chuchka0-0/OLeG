@@ -98,5 +98,46 @@
 
 # Задание 4
 
-1.
-2.
+1. ```
+      ps
+      sleep 555
+      traceroute !!!!!DOPISAT!!!
+   ```
+
+   Останавливаем процесс, тыкаем: `Ctrl + Z`
+
+   ```
+   jobs
+   fg %2
+   ```
+
+   Завершаем процесс, тыкаем: `Ctrl + X`
+
+2. ```
+         sudo apt install tmux
+   ```
+
+   ```
+   tmux new-session -d -s session1
+   tmux new-session -d -s session2
+
+   tmux send-keys -t session1 'cat' Enter
+   tmux send-keys -t session2 'echo "the second session"' Enter
+
+   tmux ls
+   ```
+
+   ```
+   tmux attach -t session1
+   ```
+
+   Остановить задачу cat: `Ctrl + C`
+
+   Отключиться от сессии: `Ctrl + B`, затем `D`
+
+   ```
+   tmux kill-session -t session1
+
+   tmux attach -t session2
+   id
+   ```
