@@ -1,27 +1,27 @@
 # Задание 1
 
-1. ```
+1. ```bash
    set
    ```
 
-2. ```
+2. ```bash
    MY_LOCAL_VAR = "local_var_value"
    ```
 
    <!--Переоткрываем терминал/смотрим в новом окне-->
 
-   ```
+   ```bash
    echo "$MY_LOCAL_VAR"
    ```
 
-3. ```
+3. ```bash
    echo 'MY_SHELL_VAR="shell_var_value"' >> ~/.bashrc
    source ~/.bashrc
 
    echo $MY_SHELL_VAR"
    ```
 
-4. ```
+4. ```bash
    echo 'MY_GLOBAL_VAR="global_var_value"' | sudo tee -a /etc/environment
 
    echo "$MY_GLOBAL_VAR"
@@ -32,44 +32,44 @@
 
 # Задание 2
 
-1. ```
+1. ```bash
    groups
    ```
 
-2. ```
+2. ```bash
    sudo groupadd new_group
    sudo gpasswd new_group
    mkdir -p new_group_dir
    echo "tyazhelo" > new_group_dir/test_file.txt
    ```
 
-3. ```
+3. ```bash
    chmod 770 new_group_dir/test_file.txt
    sudo chown root:new_group new_group_dir/test_file.txt
    ls -lh new_group_dir/test_file.txt
    ```
 
-4. ```
+4. ```bash
    echo "kapes tyazhelo" > new_group_dir/test_file.txt
    ```
 
    <!--Переоткрываем терминал/виртуалку-->
 
-   ```
+   ```bash
    sudo usermod -aG new_group $USER
    newgrp new_group
    ```
 
    <!--Переоткрываем терминал/виртуалку-->
 
-   ```
+   ```bash
    echo "User currently in the group" >> new_group_dir/test_file.txt
    cat new_group_dir/test_file.txt
    ```
 
 # Задание 3
 
-1. ```
+1. ```bash
    sudo ln -s "$PWD/new_group_dir/test_file.txt" /usr/local/bin/tf
    sudo chmod 700 /usr/local/bin/tf
    sudo chown root /usr/local/bin/tf
@@ -78,19 +78,19 @@
 
    <!--// поменять путь, открыть виртуалку, чекнуть $PATH и выбрать чото....-->
 
-   ```
+   ```bash
    cat /usr/local/bin/tf
    cat new_group_dir/test_file.txt
    ```
 
-2. ```
+2. ```bash
    alias lr='ls -l'
    lr
    ```
    
    <!--Команда работать не будет(-->
 
-   ```
+   ```bash
    echo "alias lr='ls -l'" >> ~/.bashrc
    source ~/.bashrc
    lr
@@ -98,7 +98,7 @@
 
 # Задание 4
 
-1. ```
+1. ```bash
    ps
    sleep 555
    traceroute !!!!!DOPISAT!!!
@@ -106,18 +106,18 @@
 
    Останавливаем процесс, тыкаем: `Ctrl + Z`
 
-   ```
+   ```bash
    jobs
    fg %2
    ```
 
    Завершаем процесс, тыкаем: `Ctrl + X`
 
-2. ```
+2. ```bash
    sudo apt install tmux
    ```
 
-   ```
+   ```bash
    tmux new-session -d -s session1
    tmux new-session -d -s session2
 
@@ -127,7 +127,7 @@
    tmux ls
    ```
 
-   ```
+   ```bash
    tmux attach -t session1
    ```
 
@@ -135,7 +135,7 @@
 
    Отключиться от сессии: `Ctrl + B`, затем `D`
 
-   ```
+   ```bash
    tmux kill-session -t session1
 
    tmux attach -t session2
