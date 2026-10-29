@@ -13,9 +13,16 @@
 3. ```
    echo 'MY_SHELL_VAR="shell_var_value"' >> ~/.bashrc
    source ~/.bashrc
+
+   echo $MY_SHELL_VAR"
    ```
 
-4.
+4. ```
+   echo 'MY_GLOBAL_VAR="global_var_value"' | sudo tee -a /etc/environment
+   
+   echo "$MY_GLOBAL_VAR"
+   python3 -c 'import os; print(os.getenv("MY_GLOBAL_VAR"))'
+   ```
 
 # Задание 2
 
@@ -33,3 +40,4 @@
 
 1.
 2.
+```
