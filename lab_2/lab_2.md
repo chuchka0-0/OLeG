@@ -84,11 +84,11 @@
    ```
 
 2. ```
-      alias lr='ls -l'
-      lr
+   alias lr='ls -l'
+   lr
    ```
-
-      <!--Команда работать не будет(-->
+   
+   <!--Команда работать не будет(-->
 
    ```
    echo "alias lr='ls -l'" >> ~/.bashrc
@@ -99,9 +99,9 @@
 # Задание 4
 
 1. ```
-      ps
-      sleep 555
-      traceroute !!!!!DOPISAT!!!
+   ps
+   sleep 555
+   traceroute !!!!!DOPISAT!!!
    ```
 
    Останавливаем процесс, тыкаем: `Ctrl + Z`
@@ -114,7 +114,7 @@
    Завершаем процесс, тыкаем: `Ctrl + X`
 
 2. ```
-         sudo apt install tmux
+   sudo apt install tmux
    ```
 
    ```
