@@ -141,4 +141,38 @@ git reset HEAD~1
 git checkout pushed
 git revert C2
 ```
+### Перемещаем труды туда-сюда №1
+```bash
+git cherry-pick C3 C4 C7
+```
 
+### Перемещаем труды туда-сюда №2
+```bash
+git rebase -i overHere
+```
+<!--Удаляем С2, порядок оставшихся: С3, С5, С4-->
+
+### Перемещаем труды туда-сюда №3
+```bash
+git add app.js
+git commit
+git add styles.css
+git commit
+```
+
+### Перемещаем труды туда-сюда №4
+```bash
+git restore --staged secret.env
+git restore experiment.js
+git commit
+```
+
+### Сборная солянка №1
+### Сборная солянка №2
+### Сборная солянка №3
+### Сборная солянка №4
+### Сборная солянка №5
+
+### Продвинутый уровень №1
+### Продвинутый уровень №2
+### Продвинутый уровень №3
