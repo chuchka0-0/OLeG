@@ -52,14 +52,14 @@
 4. ```
    echo "kapes tyazhelo" > new_group_dir/test_file.txt
    ```
-   
+
    <!--Переоткрываем терминал/виртуалку-->
 
    ```
    sudo usermod -aG new_group $USER
    newgrp new_group
    ```
-   
+
    <!--Переоткрываем терминал/виртуалку-->
 
    ```
@@ -69,8 +69,32 @@
 
 # Задание 3
 
-1.
-2.
+1. ```
+   sudo ln -s "$PWD/new_group_dir/test_file.txt" /usr/local/bin/tf
+   sudo chmod 700 /usr/local/bin/tf
+   sudo chown root /usr/local/bin/tf
+   ls -l /usr/local/bin/tf
+   ```
+
+   <!--// поменять путь, открыть виртуалку, чекнуть $PATH и выбрать чото....-->
+
+   ```
+   cat /usr/local/bin/tf
+   cat new_group_dir/test_file.txt
+   ```
+
+2. ```
+      alias lr='ls -l'
+      lr
+   ```
+
+      <!--Команда работать не будет(-->
+
+   ```
+   echo "alias lr='ls -l'" >> ~/.bashrc
+   source ~/.bashrc
+   lr
+   ```
 
 # Задание 4
 
