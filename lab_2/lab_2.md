@@ -36,9 +36,11 @@
    groups
    ```
 
+/etc/shadow
+/etc/gshadow
+
 2. ```bash
-   sudo groupadd new_group
-   sudo gpasswd new_group
+   sudo groupadd -p "qwerty" new_group
    mkdir -p new_group_dir
    echo "tyazhelo" > new_group_dir/test_file.txt
    ```
@@ -86,7 +88,7 @@
    lr
    ```
    
-   <!--Команда работать не будет(-->
+   <!--lr после переоткрытия терминала работать не будет(-->
 
    ```bash
    echo "alias lr='ls -l'" >> ~/.bashrc
@@ -97,19 +99,20 @@
 # Задание 4
 
 1. ```bash
-   ps
-   sleep 555
-   traceroute !!!!!DOPISAT!!!
+   sleep 1200&
    ```
 
-   Останавливаем процесс, тыкаем: `Ctrl + Z`
+   kill --help
+   kill -l
+
 
    ```bash
    jobs
-   fg %2
+   
+   kill -s SIGSTOP %1
+   kill -s SIGCONT %1
+   kill -s SIGTERM %1
    ```
-
-   Завершаем процесс, тыкаем: `Ctrl + X`
 
 2. ```bash
    sudo apt install tmux
