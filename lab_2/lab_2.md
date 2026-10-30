@@ -76,8 +76,6 @@
    ls -l /usr/local/bin/tf
    ```
 
-   <!--// поменять путь, открыть виртуалку, чекнуть $PATH и выбрать чото....-->
-
    ```bash
    cat /usr/local/bin/tf
    cat new_group_dir/test_file.txt
@@ -119,8 +117,8 @@
    ```
 
    ```bash
-   tmux new-session -d -s session1
-   tmux new-session -d -s session2
+   tmux new -d -s session1
+   tmux new -d -s session2
 
    tmux send-keys -t session1 'cat' Enter
    tmux send-keys -t session2 'echo "the second session"' Enter
