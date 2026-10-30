@@ -53,14 +53,12 @@
    echo "kapes tyazhelo" > new_group_dir/test_file.txt
    ```
 
-   <!--Переоткрываем терминал/виртуалку-->
+   <!--Переоткрываем терминал-->
 
    ```bash
    sudo usermod -aG new_group $USER
    newgrp new_group
    ```
-
-   <!--Переоткрываем терминал/виртуалку-->
 
    ```bash
    echo "User currently in the group" >> new_group_dir/test_file.txt
