@@ -78,7 +78,7 @@ git init
 
    <!--При использовании 1 коментированного блока, а не пункта 1 вместо master пропишем main-->
 
-5. Прошла уровни на сайте. Решения заданий: 
+5. Прошла уровни на сайте. Решения заданий:
 
 ### Введение №1
 
@@ -141,18 +141,23 @@ git reset HEAD~1
 git checkout pushed
 git revert C2
 ```
+
 ### Перемещаем труды туда-сюда №1
+
 ```bash
 git cherry-pick C3 C4 C7
 ```
 
 ### Перемещаем труды туда-сюда №2
+
 ```bash
 git rebase -i overHere
 ```
+
 <!--Удаляем С2, порядок оставшихся: С3, С5, С4-->
 
 ### Перемещаем труды туда-сюда №3
+
 ```bash
 git add app.js
 git commit
@@ -161,6 +166,7 @@ git commit
 ```
 
 ### Перемещаем труды туда-сюда №4
+
 ```bash
 git restore --staged secret.env
 git restore experiment.js
@@ -168,11 +174,69 @@ git commit
 ```
 
 ### Сборная солянка №1
+
+```bash
+git rebase -i main
+git branch -f main bugFix
+```
+
+<!--Оставляем: С4-->
+
 ### Сборная солянка №2
+
+```bash
+git rebase -i main
+git commit --amend
+git rebase -i main
+git branch -f main caption
+```
+
+<!--1: С3, С2. 2: C2'', C3'-->
+
 ### Сборная солянка №3
+
+```bash
+git checkout main
+git cherry-pick C2
+git commit --amend
+git cherry-pick C3
+```
+
 ### Сборная солянка №4
+
+```bash
+git tag v0 C1
+git tag v1 C2
+git checkout v1
+```
+
 ### Сборная солянка №5
 
+```bash
+git commit
+```
+
 ### Продвинутый уровень №1
+
+```bash
+git rebase main bugFix
+git rebase bugFix side
+git rebase side another
+git branch -f main HEAD
+```
+
 ### Продвинутый уровень №2
+
+```bash
+git branch bugWork HEAD~^2~
+```
+
 ### Продвинутый уровень №3
+
+```bash
+git checkout one
+git cherry-pick C4 C3 C2
+git checkout two
+git cherry-pick C5 C4 C3 C2
+git branch -f three main~3
+```
