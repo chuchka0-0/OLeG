@@ -5,7 +5,7 @@
    ```
 
 2. ```bash
-   MY_LOCAL_VAR = "local_var_value"
+   MY_LOCAL_VAR="local_var_value"
    ```
 
    <!--Переоткрываем терминал/смотрим в новом окне-->
@@ -18,7 +18,7 @@
    echo 'MY_SHELL_VAR="shell_var_value"' >> ~/.bashrc
    source ~/.bashrc
 
-   echo $MY_SHELL_VAR"
+   echo "$MY_SHELL_VAR"
    ```
 
 4. ```bash
