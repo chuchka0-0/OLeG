@@ -8,7 +8,7 @@
    MY_LOCAL_VAR="local_var_value"
    ```
 
-   <!--Переоткрываем терминал/смотрим в новом окне-->
+   <!--Переоткрываем терминал-->
 
    ```bash
    echo "$MY_LOCAL_VAR"
@@ -138,5 +138,5 @@
    tmux kill-session -t session1
 
    tmux attach -t session2
-   id
+   ls
    ```
