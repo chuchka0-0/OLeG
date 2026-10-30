@@ -36,9 +36,6 @@
    groups
    ```
 
-/etc/shadow
-/etc/gshadow
-
 2. ```bash
    sudo groupadd -p "qwerty" new_group
    mkdir -p new_group_dir
